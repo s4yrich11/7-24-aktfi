@@ -1,0 +1,6 @@
+discord.py
+Flask
+gunicorn
+PyNaCl>=1.5.0
+davey
+yt-dlp @ https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Yönetim Paneli</title>
+    <style>
+        body {
+            background-color: #313338;
+            color: #dbdee1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #2b2d31;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        h1 { color: #f2f3f5; border-bottom: 1px solid #3f4147; padding-bottom: 10px; }
+        .card {
+            background-color: #111214;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #5865f2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        button:hover { background-color: #4752c4; }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            background-color: #383a40;
+            border: 1px solid #1e1f22;
+            border-radius: 4px;
+            color: white;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Bot Yönetim Paneli</h1>
+        
+        <div class="card">
+            <h3>Bot Durumu</h3>
+            <p>Durum: <span style="color: #23a55a; font-weight: bold;">● Çevrim İçi (Aktif)</span></p>
+        </div>
+
+        <div class="card">
+            <h3>Anlık Bot Durumunu (Oynuyor) Değiştir</h3>
+            <form action="/degistir" method="POST">
+                <input type="text" name="durum_metni" placeholder="Örn: /premium | V8.18" required>
+                <button type="submit">Durumu Güncelle</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

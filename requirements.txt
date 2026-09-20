@@ -1,0 +1,8 @@
+discord.py
+Flask
+gunicorn
+PyNaCl
+davey
+yt-dlp
+python-dotenv
+gTTS

@@ -266,7 +266,7 @@ async def yaz(ctx, kanal: discord.TextChannel, *, mesaj: str):
 
 # --- BOTA SES KANALINDAN KONUŞTURMA KOMUTLARI ---
 
-YETKILI_IDLERI = [852839991297966112,1541880841993588760] 
+YETKILI_IDLERI = [852839991297966112] 
 
 async def id_kontrolu(ctx):
     return ctx.author.id in YETKILI_IDLERI
